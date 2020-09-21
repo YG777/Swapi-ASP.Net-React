@@ -17,18 +17,6 @@ namespace ReactApp.Controllers
     public class MoviesController : ControllerBase
     {
         private readonly List<Movie> movies = new List<Movie>();
-        //public MoviesController()
-        //{
-        //    movies.Add(new Movie { Id = 1, Title = "Title 1", Director = "Director 1", Producer = "Producer 1" });
-        //    movies.Add(new Movie { Id = 2, Title = "Title 2", Director = "Director 2", Producer = "Producer 2" });
-        //    movies.Add(new Movie { Id = 3, Title = "Title 3", Director = "Director 3", Producer = "Producer 3" });
-        //}
-
-        //[HttpGet]
-        //public List<Movie> Get(string q)
-        //{
-        //    return movies;
-        //}
 
         public readonly IHttpClientFactory _factory;
         public MoviesController(IHttpClientFactory factory)
